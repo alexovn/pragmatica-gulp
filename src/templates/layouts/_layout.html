@@ -1,0 +1,29 @@
+{% import "partials/_mixins.html" as mixins %}
+{% import "partials/_components.html" as component %}
+{% import "data/data.html" as data %}
+{% set version = "1.0" + now %}
+{% set og_image = "img/og-image.jpg" %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    {% include "partials/_head.html" %}
+  </head>
+  <body>
+
+    <!-- BEGIN content -->
+    <div class="wrapper">
+      {% include "partials/_header.html" %}
+      <main class="main">
+        {% block content %}{% endblock %}
+      </main>
+      {% include "partials/_modals.html" %}
+      {% include "partials/_footer.html" %}
+    </div>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js?v={{ version }}"></script>
+    <!-- END scripts -->
+
+  </body>
+</html>

@@ -1,0 +1,198 @@
+//===========================Root styles==========================
+html,
+:root {
+  font-size: 16px;
+	transition: font-size .15s ease;
+	@include rmin(992) {
+  }
+	@include rmin(1199) {
+  }
+	@include rmin(1300) {
+  }
+	@include rmin(1360) {
+  }
+	@include rmin(1700) {
+  }
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  overflow-y: overlay;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  @include text16;
+  color: #000;
+}
+::-moz-selection { /* Code for Firefox */
+  color: $secondary;
+  background: #fff;
+}
+
+::selection {
+  color: $secondary;
+  background: #fff;
+}
+
+footer {
+  flex-shrink: 0;
+}
+//===========================Root styles==========================
+
+//===========================Wrapper===============================
+
+//===========================Wrappers===============================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+//Main block=========================
+.main {
+  flex: 1 0 auto;
+}
+//Main block=========================
+
+//===========================Wrapper===============================
+
+//===========================Container==========================
+.container-fluid {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0 2.725rem;
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include r(991) {
+    padding: 0 15px;
+  }
+}
+//===========================Container==========================
+
+
+//===========================Common styles==========================
+//Buttons styles==================
+.btn {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  min-width: 9.375rem;
+  z-index: 1;
+
+  box-shadow: none !important;
+  font-weight: 700;
+
+  &-lg {
+    padding: 1rem 1rem;
+
+    @include text16;
+    font-weight: 600;
+
+    min-width: 225px;
+
+    border-radius: 0.875rem;
+    @include r(991) {
+      @include text14;
+    }
+  }
+}
+//Buttons styles==================
+
+.to-top {
+  position: fixed;
+  bottom: 1.6875rem;
+  left: 1.6875rem;
+  width: 4.125rem;
+  min-width: 4.125rem;
+  height: 4.125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  background: $primary;
+  border-radius: 100%;
+  // overflow: hidden;
+  z-index: 1;
+  transition: all .25s ease;
+  svg {
+    fill: #fff;
+  }
+  &.not-visible {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(150%) rotate(-90deg);
+  }  
+}
+//===========================Common styles==========================
+
+
+//=====================Slider common styles=====================
+//Buttons
+.slider-button {
+}
+//Pagination
+.swiper-pagination-bullet-active {
+}
+//Pagination
+
+//Render hack
+.swiper-slide{
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  }
+.swiper-wrapper{
+  -webkit-transform-style: preserve-3d;
+}
+//=====================Slider common styles=====================
+
+
+//=====================Select-2 common styles=====================
+.select2.select2-container .select2-selection--single .select2-selection__rendered {
+}
+.select2.select2-container .select2-selection--single .select2-selection__rendered {
+}
+.select2-container--default .select2-results__option {
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-results__option {
+}
+.select2-container .select2-selection--single {
+}
+.select2-dropdown {
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+}
+.select2-container--open .select2-selection__arrow {
+}
+.select2 {
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+}
+.select2-container--default .select2-results__option--selected {
+}
+//=====================Select-2 common styles=====================
+
+///================MFP common stylems================
+.mfp-wrap {
+}
+.mfp-bg {
+}
+
+.mfp-container {
+}
+
+.mfp-content {
+}
+
+.mfp-close {
+  .icon {
+  }
+}
+///================MFP common styles================

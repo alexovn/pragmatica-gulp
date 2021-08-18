@@ -1,0 +1,11 @@
+@function em($size, $context: 16) {
+  @return ($size/$context) * 1em;
+}
+
+@function rem($size, $context: 16) {
+  @return $size / $context * 1rem;
+}
+
+@function img-url($image) {
+  @return url('../img/#{$image}');
+}

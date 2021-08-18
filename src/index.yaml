@@ -1,0 +1,35 @@
+ProjectTitle: Pasionaria
+color: 298F89
+
+PageList:
+- file: ui.html
+  desc: UI Kit
+  ready: 50
+  
+- file: index.html
+  desc: Главная
+  ready: 50
+
+- file: catalog.html
+  desc: Каталог
+  ready: 50
+
+- file: category.html
+  desc: Категория
+  ready: 50
+
+- file: product-card.html
+  desc: Карточка товара
+  ready: 50
+
+- file: product-card-out.html
+  desc: Карточка (нет в нал.)
+  ready: 50
+
+- file: search.html
+  desc: Поиск
+  ready: 50
+
+- file: search-empty.html
+  desc: Поиск Пустой
+  ready: 50

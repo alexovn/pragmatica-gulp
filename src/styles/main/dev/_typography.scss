@@ -1,0 +1,81 @@
+@mixin text48 {
+  font-size: 3rem;
+  line-height: 110%;
+}
+
+@mixin text36 {
+  font-size: 2.25rem;
+  line-height: 110%;
+}
+@mixin text24 {
+  font-size: 1.5rem;
+  line-height: 110%;
+}
+
+@mixin text20 {
+  font-size: 1.25rem;
+  line-height: 144%;
+}
+
+@mixin text18 {
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+
+@mixin text16 {
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+@mixin text14 {
+  font-size: 0.875rem;
+  line-height: 110%;
+}
+
+@mixin text12 {
+  font-size: 0.75rem;
+  line-height: 110%;
+}
+
+@mixin fontP {
+  font-family: $font-primary;
+}
+@mixin fontS {
+  font-family: $font-secondary;
+}
+.text48 {
+  @include text48;
+}
+.text36 {
+  @include text36;
+}
+.text24 {
+  @include text24;
+}
+.text20 {
+  @include text20;
+}
+.text18 {
+  @include text18;
+}
+.text16 {
+  @include text16;
+}
+.text14 {
+  @include text14;
+}
+.text12 {
+  @include text12;
+}
+h1, .h1 {
+  @include text48;
+  @include fontS;
+}
+h2, .h2 {
+  @include text36;
+  @include fontS;
+}
+h3 .h3 {
+  @include text24;
+  @include fontS;
+}
